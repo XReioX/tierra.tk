@@ -1,5 +1,6 @@
 <?php
-   echo "this is my first file";
-   echo "good";
+include_once('header.php');
 ?>
-<title>login pls</title>
+<?php
+include_once('footer.php');
+?>
