@@ -4,4 +4,6 @@
    error_reporting(E_ALL);
    
    $dbh = new PDO('mysql:host=mc.legendid.eu;dbname=bunkbedmc_web', 'bunkbedmc' , 'bunkbed123');
+
+   $stmt = $dmh->prepare("");
 ?>
