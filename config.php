@@ -5,5 +5,13 @@
    
    $dbh = new PDO('mysql:host=mc.legendid.eu;dbname=bunkbedmc_web', 'bunkbedmc' , 'bunkbed123');
 
-   $stmt = $dmh->prepare("");
+   $stmt = $dmh->prepare("SELECT * FROM users;");
+   $stmt->execute();
+
+   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+   foreach ($rows as $row)
+   {
+      echo $row['user_username'];
+   }
 ?>
